@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Currencies</title>
+</head>
+<body>
+
+<div>
+    <label for="incoming-price">The price of the leather bag is</label>
+    <input type="text" id="incoming-price" value="590 INR"/>
+</div>
+<div>
+    <label for="currency">The currency you want to change the input for</label>
+    <select id="currency">
+        <option value="$">US Dollar</option>
+        <option value="€">x Euro</option>
+        <option value="£">British Pound Sterling</option>
+        <option value="₹">Indian Rupee</option>
+        <option value="€">x Euro</option>
+        <option value="¥">x Japanese Yen</option>
+        <option value="₵">x Ghanaian Cedi</option>
+        <option value="฿">x Thai Baht</option>
+    </select>
+</div>
+<h3>Result:</h3>
+<div>
+    <label for="output-price">The price of the leather bag is</label>
+    <input type="text" id="output-price"/>
+</div>
+
+<hr/>
+
+<h3>Test notes</h3>
+
+<p>
+    I've just implemented 4 because of time reasons
+</p>
+
+<h3>Possible currencies</h3>
+
+<ul>
+    <li>'USD': '$', // US Dollar</li>
+    <li>'EUR': '€', // Euro</li>
+    <li>'GBP': '£', // British Pound Sterling</li>
+    <li>'INR': '₹', // Indian Rupee</li>
+    <li>'JPY': '¥', // Japanese Yen</li>
+    <li>'GH': '₵', // Ghanaian Cedi</li>
+    <li>'THB': '฿', // Thai Baht</li>
+</ul>
+
+<h4>Example</h4>
+
+<p>
+    From: "The price of the leather bag is 590 INR"<br/>
+    To  : "The price of the leather bag is £59.30"
+</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="src/currencies.js" ></script>
+<script src="src/index.js" ></script>
+</body>
+</html>
